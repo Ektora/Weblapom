@@ -2,7 +2,11 @@
 <html lang="hu">
   <head>
     <title>Gyakorló</title>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="description" content="A webfejlesztés fortélyainak elsajátítása">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Lucski Zsolt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap"
@@ -10,22 +14,22 @@
     />
   </head>
   <body>
+    <div class="wrapper">
     <header>
-      <h1>Bemutatkozás</h1>
-      <h4 id="links">
-        <a href="#bemutatkozas" class="links">Rövid bemutatkozás</a>
-        <a href="#munka" class="links">Munkahelyeim</a>
-        <a href="#tanulmanyok" class="links">Tanulmányaim</a>
-        <a href="#kepzettseg" class="links">Egyéb képzettségeim</a>
-        <a href="#nyelv" class="links">Nyelv ismereteim</a>
-        <a href="#hobbi" class="links">Hobbijaim</a>
-        <a href="#allataim" class="links">Házi állataim</a>
-      </h4>
+      <h1>Lucski Zsolt weblapja</h1>
     </header>
-    <div id="body">
-      <nav><p>Fentartott rész</p></nav>
-      <section>
-        <article>
+    <div class="vaz">
+      <nav>
+        <ul>
+          <li><a href="">Menü1</a></li>
+          <li><a href="">Menü2</a></li>
+          <li><a href="">Menü3</a></li>
+          <li><a href="">Menü4</a></li>
+        </ul>
+      </nav>
+    <div class="content">
+      <main>
+      <div>
           <h2><a id="bemutatkozas"></a>Rövid bemutatkozás</h2>
           <p>
             Lucski Zsolt vagyok, 29 éves, diplomás
@@ -39,8 +43,8 @@
             nyelvet tanultam /a szakdolgozatomat is ebben írtam/ mellette még
             C#-ot és C-t.
           </p>
-        </article>
-        <article>
+        </div>
+        <div>
           <h2><a id="munka"></a>Munkahelyeim</h2>
           <dl>
             <dt>
@@ -50,33 +54,32 @@
             <dt>2013-2018 &Ocirc;stermel&ocirc;, 2018 óta biotermel&ocirc;</dt>
             <dd>Alma, szilva, meggy és cseresznyetermesztés 3 ha területen.</dd>
           </dl>
-        </article>
-        <article>
+        </div>
+        <div>
         <h2><a id="tanulmanyok"></a>Tanulmányaim</h2>
-        <dl>
-          <dt>Iskoláim:</dt>
-          <dd>
+        <ul>
+          <li>
             2020-2022 Kisvárdai SZC Kandó Kálmán Technikum Pénzügyi-számviteli
             ügyintéző szak
-          </dd>
-          <dd>
+          </li>
+          <li>
             2009-2013 Debreceni Egyetem Programtervez&ocirc; informatikus szak
-          </dd>
-          <dd>
+          </li>
+          <li>
             2005-2009 Szent László Szakközépiskola és Kollégiuma, Informatika
             szak
-          </dd>
-          <dd>1997-2005 Mándoki Általános Központ</dd>
-        </dl>
-        </article>
-        <article>
+          </li>
+          <li>1997-2005 Mándoki Általános Központ</li>
+        </ul>
+      </div>
+      <div>
         <h2><a id="kepzettseg"></a>Egyéb képzettségeim</h2>
         <ul>
           <li>Számítógép-kezel&ocirc;i(és -használói) OKJ képzés</li>
           <li>ECDL</li>
         </ul>
-    </article>
-    <article>
+      </div>
+      <div>
         <h2><a id="nyelv"></a>Nyelv ismereteim</h2>
         <p>
           Angol középfokú írásbeli nyelvvizsgát tettem, jelenleg a szóbelire
@@ -93,19 +96,20 @@
           <dt>Számítógépes játékok</dt>
           <dd><cite>World of Warcraft</cite>, <cite>Assassins Creed</cite></dd>
         </dl>
-    </article>
-    <article>
+      </div>
+      <div>
         <h2><a id="allataim"></a>Házi állataim</h2>
         <p>
           Otthon sok állatot tartok már gyerekkorom óta. Megtalálhatóak közöttük
           a kedvtelésből tartott házi állatok és a haszonállatok is.
         </p>
-    </article>
-      </section>
+      </div>
+    </main>
       <aside><p>Fentartott rész</p></aside>
-    </div>
+  </div>
     <footer>
       <p id="footer">Copyright:Zsolt Lucski&trade;</p>
     </footer>
+    </div>
   </body>
 </html>
