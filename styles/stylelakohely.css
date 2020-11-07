@@ -2,20 +2,26 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #cfd8dc;
     margin: 0;
     font-family: 'Grandstander', cursive;
 }
 .grid-container{
+    background-image: linear-gradient(to bottom, #e7e7e9, #AEAEAF);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "header" "nav" "main" "aside" "footer";
 }
-.header{
+
+    
+    
+header{
     grid-area: header;
+    background: url('../images/lakhelysmall.jpg') no-repeat top center;
+    height: 300px;
 }
+
 .nav{
     grid-area: nav;
 }
@@ -27,4 +33,15 @@ body{
 }
 .footer{
     grid-area: footer;
+}
+
+@media (min-width: 800px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main aside"
+        "footer footer footer";
+    }
 }
