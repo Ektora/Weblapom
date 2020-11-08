@@ -16,7 +16,7 @@ header{
     border: 1px solid rgba(0, 0, 0, .4);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);;
     position: relative;
-    background: url('images/programmer.png') no-repeat top center;
+    background: url('../images/programmer.png') no-repeat top center;
     height: 400px;
 }
 h1{
