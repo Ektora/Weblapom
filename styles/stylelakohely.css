@@ -33,6 +33,7 @@ header > h1 {
   position: sticky;
   top: 0;
   background-color: #aeaeaf;
+  margin-bottom: 20px;
 }
 .nav ul {
   list-style-type: none;
@@ -61,6 +62,11 @@ header > h1 {
 /*Main szekció kialakítása*/
 .main {
   grid-area: main;
+}
+.main>h2{
+    text-align: center;
+    color: #4b4b97;
+    color: #5a1539;
 }
 .main-div{
     display: grid;
@@ -94,7 +100,7 @@ header > h1 {
 @media (min-width: 800px) {
     /*3 oszlopos elrendezés a két oldalsó részhez*/
   .grid-container {
-    max-width: 1200px;
+    max-width: 1000px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 5px;
     grid-template-areas:
@@ -102,6 +108,10 @@ header > h1 {
       "nav nav nav nav nav nav"
       "sidemenu main main main main aside"
       "footer footer footer footer footer footer";
+  }
+  header{
+      background: url('../images/lakhelymedium.jpg') no-repeat top center;
+      height: 300px;
   }
   /*A fő rész nagyobb monitoron két hasábban jelenik meg*/
   .main-div{
