@@ -20,7 +20,6 @@ header {
   grid-area: header;
   background: url("../images/lakhelysmall.jpg") no-repeat top center;
   height: 300px;
-  position: relative;
 }
 header > h1 {
   margin-top: 15px;
@@ -43,7 +42,7 @@ header > h1 {
 .nav ul li {
   float: left;
 }
-.nav ul li a {
+.nav ul li a, .sidemenu ul li a {
   text-shadow: 4px 4px 15px;
   color: rgba(0, 0, 0, 0.808);
   text-decoration: none;
@@ -51,6 +50,7 @@ header > h1 {
   padding: 8px;
 }
 .nav ul li a:hover,
+.sidemenu ul li a:hover,
 #aktivmenu {
   background-color: #85a250d6;
   color: #5a1539;
@@ -63,7 +63,7 @@ header > h1 {
 .main {
   grid-area: main;
 }
-.main>h2, .sidemenu>h2{
+.main>h2, .sidemenu h2, .aside h2{
     text-align: center;
     color: #4b4b97;
 }
@@ -86,14 +86,58 @@ header > h1 {
 .aside {
   grid-area: aside;
 }
+.aside .container-skillbars{
+  margin: 0 20px;
+  max-width: 100%;
+  height: 20px;
+  border-radius: 15px;
+  background-color:  #43788F;
+}
+.skill-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: start; 
+  grid-gap: 10px;
+}
+.skill-grid h3{
+  margin: 0 auto 5px auto;
+}
+.aside .skills{
+  height: 20px;
+  border-radius: 15px;
+  text-align: right;
+  color: white;
+}
+.html{
+  width: 50%;
+  background-color: #678A1F;
+}
+.css{
+  width: 40%;
+  background-color: #3D1864;
+}
+.js{
+  width: 5%;
+  background-color: #678A1F;
+}
+.php{
+  width: 0%;
+  background-color: #3D1864;
+}
+.sql{
+  width: 40%;
+  background-color: #678A1F;
+}
 /*Oldalsó lokális menü, mobilnál rejtve marad*/
 .sidemenu {
     grid-area: sidemenu;
     display: none;
+    position: relative;
   }
 
 /*Lábléc*/
 .footer {
+  margin-top: 20px;
   grid-area: footer;
   text-align: right;
   font-size: medium;
@@ -143,6 +187,13 @@ header > h1 {
   }
   .sidemenu{
     display: block;
+  }
+  .sidemenu #tapadomenu{
+    position: sticky;
+    top:0;
+  }
+  .skill-grid{
+    grid-template-columns: 1fr;
   }
   .imgleft{
     margin-right: 5px;
