@@ -22,6 +22,10 @@ function skillDateInterval(){
 	datum = " A honlapot fejlesztem:<br>" +
 	+ ev + " éve " + ho + " hónapja " + nap + " napja";
 	elem.innerHTML = datum;
+	if(nap%30==0)
+		elem.style.color = "#3D1864";
+	else
+		elem.style.color = "#678A1F";
 }
 function h3Szinez() {
     var randomszin;

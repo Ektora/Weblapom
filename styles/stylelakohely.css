@@ -98,6 +98,9 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, .7);
     text-align: center;
     color: #4b4b97;
 }
+.aside #skilldateinterval{
+	text-align: center;
+}
 .aside-technikak p{
 padding:0 5px 0 5px;
 
