@@ -9,6 +9,8 @@ body {
 /*Mobile-first szemlélet kialakítása, elsőnek a kis eszközökre való optimalizálás*/
 .grid-container {
   max-width: 600px;
+  border: solid 1px rgba(75, 75, 151, 0.5);
+  padding: 0 2px 0 2px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -142,15 +144,15 @@ padding-bottom:10px;
   font-size: 16px;
 }
 .html{
-  width: 50%;
+  width: 60%;
   background-color: #678A1F;
 }
 .css{
-  width: 40%;
+  width: 50%;
   background-color: #3D1864;
 }
 .js{
-  width: 5%;
+  width: 10%;
   background-color: #678A1F;
 }
 .php{
@@ -188,9 +190,17 @@ picture{
   transform: rotate(-2deg);
   float: right;
 }
+.imgright:hover{
+  transition: width 2s, height 2s, transform 2s;
+  transform: rotate(358deg);
+}
 .imgleft{
 transform: rotate(2deg);
   float: left;
+}
+.imgleft:hover{
+  transition: width 2s, height 2s, transform 2s;
+  transform: rotate(-358deg);
 }
 /*Méretezés a 800 pixelnél nagyobb eszközökre*/
 @media (min-width: 800px) {
