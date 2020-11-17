@@ -13,9 +13,9 @@ function skillDateInterval(){
 	var kezdoDatum = new Date("2020-10-22");
 	var nap = jelenDatum - kezdoDatum;
 	nap=(Math.floor(nap/1000/60/60/24));
-	var ev = parseInt(nap/365);
+	var ev = Math.floor(nap/365);
 	nap =nap%365;
-	var ho = parseInt(nap/30);
+	var ho = Math.floor(nap/30);
 	nap = nap%30;
 	var elem = document.getElementById("skilldateinterval");
 	elem.innerHTML = "Nem tudom mi a baj";
