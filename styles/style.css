@@ -55,7 +55,7 @@ nav ul li{
 }
 nav a{
     color: #E6EBEE;
-    font-size: 20px;
+    font-size: 14px;
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -69,7 +69,7 @@ nav #menu4{
 }
 .content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .bemutat img{
@@ -95,21 +95,24 @@ nav #menu4{
     padding: 5px 0;
 }
 main{
-    width: 75vw;
+    width: 100%;
 }
+aside{
+    width: 100%;
+}
+
 main>div{
     box-shadow: 5px 5px 5px #43788F;
     padding: 10px 0;
 }
-aside{
-    width: 25vw;
-}
+
 .egyeb{
     margin: 30px 0;
     max-height: 400px;
     overflow: auto;
 }
 .aside-divs{
+    margin: 20px 0;
     box-shadow: 5px 5px 5px #43788F;
     padding-bottom: 10px;
 }
@@ -158,4 +161,20 @@ footer p{
     color: #FFF99C;
     margin: 10px 0 0 0;
     padding: 20px 20px 20px 0px;
+}
+
+@media (min-width: 800px){
+.content{
+    display: flex;
+    flex-direction: row;
+}
+main{
+    width: 75%;
+}
+aside{
+    width: 25%;
+}
+nav a{
+font-size:16px;
+}
 }
