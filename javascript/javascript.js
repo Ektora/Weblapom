@@ -1,9 +1,12 @@
 "use strict";
-function adatbetoltes(){
+function adatbetoltesLakohely(){
 	skillDateInterval();
 	skillDate();
 	kitolt();
-	
+	kitoltSkill();
+};
+function adatbetoltesAboutMe(){
+	kitoltSkill();
 };
 function skillDate(){
 	try{
@@ -41,6 +44,16 @@ function skillDateInterval(){
 }
 }
 
+var skills = [60,50,10,0,40], skillsname=["html","css","js","php","sql"];
+function kitoltSkill(){
+	var i=0, length=skillsname.length, elem;
+	for(i;i<length;i++){
+		elem=document.getElementById(skillsname[i]);
+		elem.innerHTML="" + skills[i] + "%";
+	}
+}
+
+// Az állatok nevei, korai
 class Animandgard{
 	constructor(sorszam,name,year){
 	this.sorszam=sorszam;
@@ -53,7 +66,7 @@ class Animandgard{
 	}
 }
 
-var animal1, animal2, animal3, animal4, animal5, animal6, animal7, animal8, animals = [];
+var animals = [];
 	animals.push( new Animandgard(1,"Mazsola",2007));
 	animals.push( new Animandgard(2,"Burkus",2013));
 	animals.push( new Animandgard(3,"Vakarcs",2020));
@@ -79,6 +92,4 @@ function kitolt(){
 	catch(err){
 	alert(err.message);
 	}
-	
-	
 }

@@ -133,23 +133,23 @@ aside h3, aside h2{
     text-align: right;
     color: white;
 }
-.html{
+#html{
     width: 60%;
     background-color: #678A1F;
 }
-.css{
+#css{
     width: 50%;
     background-color: #3D1864;
 }
-.js{
+#js{
     width: 10%;
     background-color: #678A1F;
 }
-.php{
+#php{
     width: 0%;
     background-color: #3D1864;
 }
-.sql{
+#sql{
     width: 40%;
     background-color: #678A1F;
 }
