@@ -4,6 +4,7 @@ function adatbetoltesLakohely(){
 	skillDate();
 	kitolt();
 	kitoltSkill();
+	setInterval(actualtime,1000);
 };
 function adatbetoltesAboutMe(){
 	kitoltSkill();
@@ -19,6 +20,16 @@ catch(err){
 	alert("Baj van a skillDate() függvénnyel: " + err.message);
 }
 }
+
+function actualtime(){
+	var date = new Date();
+	document.getElementById("actualtime").innerHTML = 
+	date.getHours() + ":" +
+	date.getMinutes() + ":" +
+	date.getSeconds();
+
+}
+
 function skillDateInterval(){
 	try{
 	var jelenDatum = new Date();

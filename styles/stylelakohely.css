@@ -113,7 +113,8 @@ border : solid 1px rgba(75, 75, 151, 0.5);
 border : solid 1px rgba(75, 75, 151, 0.5);
 box-shadow: 5px 5px 5px rgba(0, 0, 0, .7);
 }
- .aside #skilldate{
+ .aside #skilldate, .aside #actualtime{
+    font-size: 16px;
     text-align: center;
     color: #4b4b97;
 }
@@ -149,9 +150,7 @@ padding-bottom:10px;
   text-align: right;
   color: white;
 }
-.aside #skilldate{
-  font-size: 16px;
-}
+
 #html{
   width: 60%;
   background-color: #678A1F;
