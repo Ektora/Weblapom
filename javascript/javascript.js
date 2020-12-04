@@ -7,26 +7,53 @@ function adatbetoltesLakohely(){
 	setInterval(actualtime,1000);
 };
 function adatbetoltesAboutMe(){
+	skillDateInterval();
+	skillDate();
+	setInterval(actualtime,1000);
 	kitoltSkill();
 };
 function skillDate(){
 	try{
 	var elem = document.getElementById("skilldate");
-	var datum = new Date();
-	datum = (datum.getFullYear() + ". " + Number(datum.getMonth()+1) + " " +datum.getDate()+".");
+	var year,mon,day, datum = new Date();
+	year=datum.getFullYear();
+	mon=datum.getMonth()+1;
+	day=datum.getDate();
+	if(mon<10){
+		mon = "0" + mon;
+	}
+	if(day<10){
+		day = "0" + day;
+	}
+	datum = year + ". " + mon + ". " + day + ".";
+	//datum = (datum.getFullYear() + ". " + Number(datum.getMonth()+1) + ". " +datum.getDate()+".");
 	elem.innerHTML = datum;
 	}
-catch(err){
+	catch(err){
 	alert("Baj van a skillDate() függvénnyel: " + err.message);
 }
 }
 
 function actualtime(){
 	var date = new Date();
-	document.getElementById("actualtime").innerHTML = 
-	date.getHours() + ":" +
-	date.getMinutes() + ":" +
-	date.getSeconds();
+	var hour, min, sec;
+	hour = date.getHours();
+	min = date.getMinutes();
+	sec = date.getSeconds();
+	if(hour<10){
+		hour = "0" + hour;
+	}
+	if(min<10){
+		min = "0" + min;
+	}
+	if(sec<10){
+		sec = "0" + sec;
+	}
+	document.getElementById("actualtime").innerHTML =
+	hour + ":" +
+	min + ":" +
+	sec;
+	
 
 }
 

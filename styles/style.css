@@ -117,9 +117,14 @@ main>div{
     padding-bottom: 10px;
 }
 aside h3, aside h2{
+    text-align: center;
     color: #935D21;
     margin: 10px;
 }
+#skilldateinterval{
+    text-align:center;
+}
+
 .container-skillbars{
     margin: 0 20px;
     max-width: 100%;
