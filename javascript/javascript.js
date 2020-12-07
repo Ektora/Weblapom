@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 function adatbetoltesLakohely(){
 	skillDateInterval();
 	skillDate();
@@ -67,14 +67,17 @@ function skillDateInterval(){
 	nap =nap%365;
 	var ho = Math.floor(nap/30);
 	nap = nap%30;
-	var elem = document.getElementById("skilldateinterval");
+	//var elem = document.getElementById("skilldateinterval");
 	var datum = " A honlapot fejlesztem:<br>" + ev + " éve " + ho + " hónapja " + nap + " napja";
-	elem.innerHTML = datum;
+	$("#skilldateinterval").html(datum);
+	var elem = $("#skilldateinterval").html();
 	if((nap%2)===0){
-		elem.style.color = "#3D1864";
+		//elem.style.color = "#3D1864";
+		$("#skilldateinterval").css("color","#3D1864");
 	}
 	else{
-		elem.style.color = "#678A1F";
+		//elem.style.color = "#678A1F";
+		$("#skilldateinterval").css("color","#678A1F");
 	}
 }
 	catch(err){
