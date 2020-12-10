@@ -85,7 +85,7 @@ function skillDateInterval(){
 }
 }
 
-var skills = [60,50,10,0,40], skillsname=["html","css","js","php","sql"];
+var skills = [60,50,40,5,40], skillsname=["html","css","js","php","sql"];
 function kitoltSkill(){
 	var i=0, length=skillsname.length, elem;
 	for(i;i<length;i++){
