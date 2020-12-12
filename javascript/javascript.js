@@ -91,6 +91,16 @@ function kitoltSkill(){
 	for(i;i<length;i++){
 		elem=document.getElementById(skillsname[i]);
 		elem.innerHTML="" + skills[i] + "%";
+		elem.style.width=skills[i] + "%";
+		var mod = i%2;
+		switch(mod){
+			case 0:
+				elem.style.backgroundColor="#678A1F";
+				break;
+			case 1:
+				elem.style.backgroundColor="#3D1864";
+				break;
+		}
 	}
 }
 
