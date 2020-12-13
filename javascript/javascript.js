@@ -3,15 +3,14 @@ function adatbetoltesLakohely(){
 	skillDateInterval();
 	skillDate();
 	kitolt();
-	//kitoltSkill();
 	setInterval(actualtime,1000);
-	skillss();
+	skillss("skill-grid");
 };
 function adatbetoltesAboutMe(){
 	skillDateInterval();
 	skillDate();
 	setInterval(actualtime,1000);
-	//kitoltSkill();
+	skillss("skills");
 };
 function skillDate(){
 	try{
@@ -87,28 +86,10 @@ function skillDateInterval(){
 }
 
 var skills = [60,50,40,5,40], skillsname=["html","css","js","php","sql"];
-/*function kitoltSkill(){
-	var i=0, length=skillsname.length, elem;
-	for(i;i<length;i++){
-		elem=document.getElementById(skillsname[i]);
-		elem.innerHTML="" + skills[i] + "%";
-		elem.style.width=skills[i] + "%";
-		var mod = i%2;
-		switch(mod){
-			case 0:
-				elem.style.backgroundColor="#678A1F";
-				break;
-			case 1:
-				elem.style.backgroundColor="#3D1864";
-				break;
-		}
-	}
-}
-*/
 
-function skillss(){
+function skillss(parentname){
 	var parent, h3, divkulso, divkozep, divbelso, mod;
-	parent = document.getElementById("skill-grid");
+	parent = document.getElementById(parentname);
 	
 	for(var i=0; i<skills.length;i++){
 	divkulso = document.createElement("div");
