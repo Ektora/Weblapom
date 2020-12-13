@@ -133,7 +133,7 @@ padding:0 5px 0 5px;
   background-color:  #43788F;
 box-shadow: 5px 5px 5px rgba(0, 0, 0, .7);
 }
-.skill-grid{
+#skill-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-self: start; 
@@ -141,8 +141,9 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, .7);
 padding-bottom:10px;
 
 }
-.skill-grid h3{
+#skill-grid h3{
   margin: 0 0 5px 5px;
+  text-align: center;
 }
 .aside .skills{
   height: 20px;
@@ -250,7 +251,7 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, .7);
     position: sticky;
     top:0;
   }
-  .skill-grid{
+  #skill-grid{
     grid-template-columns: 1fr;
   }
   .imgleft{

@@ -1,16 +1,17 @@
-//"use strict";
+"use strict";
 function adatbetoltesLakohely(){
 	skillDateInterval();
 	skillDate();
 	kitolt();
-	kitoltSkill();
+	//kitoltSkill();
 	setInterval(actualtime,1000);
+	skillss();
 };
 function adatbetoltesAboutMe(){
 	skillDateInterval();
 	skillDate();
 	setInterval(actualtime,1000);
-	kitoltSkill();
+	//kitoltSkill();
 };
 function skillDate(){
 	try{
@@ -86,7 +87,7 @@ function skillDateInterval(){
 }
 
 var skills = [60,50,40,5,40], skillsname=["html","css","js","php","sql"];
-function kitoltSkill(){
+/*function kitoltSkill(){
 	var i=0, length=skillsname.length, elem;
 	for(i;i<length;i++){
 		elem=document.getElementById(skillsname[i]);
@@ -101,6 +102,36 @@ function kitoltSkill(){
 				elem.style.backgroundColor="#3D1864";
 				break;
 		}
+	}
+}
+*/
+
+function skillss(){
+	var parent, h3, divkulso, divkozep, divbelso, mod;
+	parent = document.getElementById("skill-grid");
+	
+	for(var i=0; i<skills.length;i++){
+	divkulso = document.createElement("div");
+	divkozep = document.createElement("div");
+	divbelso = document.createElement("div");
+	h3 = "<h3>" + skillsname[i].toUpperCase() + "</h3>";
+	$(divkulso).append(h3);
+	$(divkozep).addClass("container-skillbars");
+	$(divbelso).addClass("skills");
+
+	$(divbelso).text(skills[i] + "%").css("width", skills[i] + "%");
+	mod = i%2;
+	switch(mod){
+		case 0:
+			$(divbelso).css("background-color","#678A1F");
+			break;
+		case 1:
+			$(divbelso).css("background-color","#3D1864");
+			break;
+	}
+	$(divkozep).append(divbelso);
+	$(divkulso).append(divkozep);
+	$(parent).append(divkulso);
 	}
 }
 

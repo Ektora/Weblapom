@@ -248,38 +248,7 @@
         <h3 id="skilldate"></h3>
         <h3 id="actualtime"></h3>
         <p id="skilldateinterval">Itt lesz az adatom</p>
-        <div class="skill-grid">
-          <div>
-            <h3>HTML</h3>
-            <div class="container-skillbars">
-              <div class="skills" id="html"></div>
-            </div>
-          </div>
-          <div>
-            <h3>CSS</h3>
-            <div class="container-skillbars">
-              <div class="skills" id="css"></div>
-            </div>
-          </div>
-          <div>
-            <h3>JavaScript</h3>
-            <div class="container-skillbars">
-              <div class="skills" id="js"></div>
-            </div>
-          </div>
-          <div>
-            <h3>PHP</h3>
-            <div class="container-skillbars">
-              <div class="skills" id="php"></div>
-            </div>
-          </div>
-          <div>
-            <h3>SQL</h3>
-            <div class="container-skillbars">
-              <div class="skills" id="sql"></div>
-            </div>
-          </div>
-        </div>
+        <div id="skill-grid"></div>
       </div>
       <div class="aside-technikak">
         <h2>Felhasznált technikák</h2>
